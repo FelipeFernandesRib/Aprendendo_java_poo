@@ -127,11 +127,11 @@ public class Lutador {
     }
     
     public void status(){
-        System.out.println(getNome());
+        System.out.println("\n" + getNome());
         System.out.println("é um peso " + getCategoria());
         System.out.println( getVitorias() + " vitórias");
         System.out.println( getDerrotas() + " derrotas");
-        System.out.println( getEmpates() + " empates");
+        System.out.println( getEmpates() + " empates\n");
     }
     
     public void ganharLuta(){
@@ -140,7 +140,7 @@ public class Lutador {
     public void perderLuta(){
         this.setDerrotas(this.getDerrotas() + 1);
     }
-    public void perdeLuta(){
+    public void empatarLuta(){
         this.setEmpates(this.getEmpates() + 1 );
     }
 }
